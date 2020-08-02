@@ -1,0 +1,126 @@
+/* 
+    0 - 600px: Phone
+    600 - 900px: Tablet Potrait
+    900 - 1200px: Tablet Landscape
+    1200 - 1800px: Normal Styling
+    1800px + : Large Monitor
+ 
+
+ $breakpoint argument choices:
+ - phone
+ - tab-port
+ - tab-land
+ - big-desktop
+ */
+ *,
+ *::after,
+ *::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit; }
+ 
+ html {
+   font-size: 62.5%; }
+   @media (min-width: 112.5em) {
+     html {
+       font-size: 75%; } }
+   @media (max-width: 75em) {
+     html {
+       font-size: 56.25%; } }
+   @media (max-width: 56.25em) {
+     html {
+       font-size: 50%; } }
+   @media (max-width: 37.5em) {
+     html {
+       font-size: 37.5%; } }
+ 
+ body {
+   box-sizing: border-box;
+   padding: .5rem; }
+   @media (max-width: 56.25em) {
+     body {
+       padding: 0; } }
+   @media (max-width: 37.5em) {
+     body {
+       padding: 0; } }
+ 
+ ::selection {
+   background-color: rebeccapurple;
+   color: whitesmoke; }
+ 
+ .section-generator {
+   background-image: linear-gradient(to right bottom, rgba(145, 110, 209, 0.801), rgba(36, 9, 85, 0.801));
+   color: #fff;
+   height: 100vh;
+   position: relative; }
+ 
+ .generator-box {
+   background-color: #240955;
+   position: relative;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 25%;
+   height: auto;
+   text-align: center;
+   border-radius: .5rem;
+   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5); }
+   .generator-box__header {
+     font-weight: 700;
+     padding-top: 2rem;
+     font-size: 2.5rem;
+     color: #fff; }
+   .generator-box__input {
+     background-color: #13032f;
+     display: inline-block;
+     width: 80%;
+     height: 40px;
+     margin: 1.5rem; }
+     .generator-box__input--textbox {
+       background-color: #13032f;
+       height: 100%;
+       width: 85%;
+       border: none;
+       text-align: center;
+       color: #eee; }
+     .generator-box__input--label {
+       background-color: #916ed1;
+       float: right;
+       height: 100%;
+       width: 15%; }
+   .generator-box__icon {
+     color: #eee;
+     display: inline-block;
+     font-size: 250%; }
+   .generator-box__params--content {
+     padding: 1rem;
+     display: inline-block;
+     text-align: right; }
+   .generator-box__params label {
+     float: left;
+     height: 2rem;
+     margin-top: 1rem;
+     font-size: 1.5rem;
+     font-weight: 100; }
+   .generator-box__params span {
+     float: left;
+     height: 2rem;
+     margin-top: 1rem;
+     font-size: 4rem;
+     font-weight: 500; }
+   .generator-box__params input {
+     float: right;
+     margin: 1rem;
+     width: 5rem;
+     height: 2rem; }
+ 
+ button {
+   margin: 2rem;
+   border: none;
+   background-color: #13032f;
+   color: #fff;
+   text-transform: uppercase;
+   height: 4rem;
+   width: 80%;
+   padding: 2rem; }
+ 

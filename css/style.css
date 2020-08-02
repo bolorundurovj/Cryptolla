@@ -12,47 +12,19 @@
  - tab-land
  - big-desktop
  */
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
+
 
 html {
   font-size: 62.5%; }
-  @media (min-width: 112.5em) {
-    html {
-      font-size: 75%; } }
-  @media (max-width: 75em) {
-    html {
-      font-size: 56.25%; } }
-  @media (max-width: 56.25em) {
-    html {
-      font-size: 50%; } }
-  @media (max-width: 37.5em) {
-    html {
-      font-size: 37.5%; } }
 
 body {
   box-sizing: border-box;
   padding: .5rem; }
-  @media (max-width: 56.25em) {
-    body {
-      padding: 0; } }
-  @media (max-width: 37.5em) {
-    body {
-      padding: 0; } }
 
 ::selection {
   background-color: rebeccapurple;
   color: whitesmoke; }
 
-.section-generator {
-  background-image: linear-gradient(to right bottom, rgba(145, 110, 209, 0.801), rgba(36, 9, 85, 0.801));
-  color: #fff;
-  height: 100vh;
-  position: relative; }
 
 .generator-box {
   background-color: #240955;

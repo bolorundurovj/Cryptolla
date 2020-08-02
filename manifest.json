@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "Password Gen",
+    "description": "A Simple and Easy to Use Secure Password Generator",
+    "version": "1.0.0",
+    "icons": {"128": "icons8_password_160px.png"},
+    "browser_action": {
+        "default_icon": "icons8_password_60px.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": ["activeTab"]
+}
