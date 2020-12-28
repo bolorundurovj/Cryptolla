@@ -19,7 +19,7 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: .5rem; }
+  padding: .2rem; }
 
 ::selection {
   background-color: rebeccapurple;
@@ -28,11 +28,11 @@ body {
 
 .generator-box {
   background-color: #240955;
-  position: relative;
+  /* position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 25%;
+  transform: translate(-50%, -50%); */
+  width: 100%;
   height: auto;
   text-align: center;
   border-radius: .5rem;
@@ -54,7 +54,8 @@ body {
       width: 85%;
       border: none;
       text-align: center;
-      color: #eee; }
+      color: #eee;
+    font-size: larger; }
     .generator-box__input--label {
       background-color: #916ed1;
       float: right;
