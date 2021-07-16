@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Password Generator",
   "description": "A Simple and Easy to Use Secure Password Generator",
-  "version": "2.1.0",
+  "version": "1.0.0",
   "icons": {
     "128": "160px.png",
     "32": "32px.png",
