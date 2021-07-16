@@ -14,6 +14,7 @@
         <section class="section-generator">
             <div class="generator-box">
                 <h3 class="generator-box__header">Password Generator</h3>
+                <span id="alert" class="alert"></span>
 
                 <div class="generator-box__input">
                     <span name="result" id="result" class="generator-box__input--textbox"> </span>
@@ -22,18 +23,10 @@
                     </label>
                 </div>
 
-                <div class="generator-box__params">
+                <div class="generator-box__params" style="text-align: left;">
                     <div class="generator-box__params--content">
                         <label for="number">Password Length</label >
                         <input type="number" name="length" id="length" min="4" max="20" value="20">
-                    </div>
-                    <div class="generator-box__params--content">
-                        <label for="uppercase">Include Uppercase Letters</label >
-                        <input checked type="checkbox" name="uppercase" id="uppercase">
-                    </div>
-                    <div class="generator-box__params--content">
-                        <label for="lowercase">Include Lowercase Letters</label >
-                        <input checked type="checkbox" name="lowercase" id="lowercase">
                     </div>
                     <div class="generator-box__params--content">
                         <label for="numbers">Include Numbers</label >
@@ -42,6 +35,14 @@
                     <div class="generator-box__params--content">
                         <label for="symbols">Include Symbols</label>
                         <input checked type="checkbox" name="symbols" id="symbols">
+                    </div>
+                    <div class="generator-box__params--content">
+                        <label for="uppercase">Include Uppercase Letters</label >
+                        <input checked type="checkbox" name="uppercase" id="uppercase">
+                    </div>
+                    <div class="generator-box__params--content">
+                        <label for="lowercase">Include Lowercase Letters</label >
+                        <input checked type="checkbox" name="lowercase" id="lowercase">
                     </div>
                 </div>
                 <button id="generate">Generate Password</button>
